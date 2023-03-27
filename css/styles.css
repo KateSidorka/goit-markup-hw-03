@@ -39,6 +39,19 @@ body {
   color: #434455;
   background-color: var(--main-background-color);
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .container {
   width: 1158px;
   padding-left: 15px;
@@ -160,7 +173,6 @@ body {
 }
 .hero-btn {
   min-width: 169px;
-  height: 56px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -171,6 +183,8 @@ body {
   letter-spacing: 0.04em;
   color: #ffffff;
   border-radius: 4px;
+  padding: 16px 32px;
+  border: none;
 }
 /* !-----------------PRIVILAGE------------- */
 
@@ -180,6 +194,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--second-title-color);
+  margin-bottom: 8px;
 }
 .feature-list {
   display: flex;
@@ -246,6 +261,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--second-title-color);
+  margin-bottom: 8px;
 }
 .team-text {
   font-size: 16px;
@@ -253,6 +269,9 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
+}
+.team-card {
+  padding: 32px 16px;
 }
 /* !-------------------FOOTER------------- */
 .footer {
@@ -305,8 +324,6 @@ body {
   justify-content: center;
   gap: 24px;
 }
-.filter-item {
-}
 .filter-btn:is(:hover, :focus) {
   background-color: #404bbf;
   color: #ffffff;
@@ -336,6 +353,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--second-title-color);
+  margin-bottom: 8px;
 }
 .products-text {
   font-size: 16px;
@@ -348,4 +366,9 @@ body {
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
+}
+.products-card {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
